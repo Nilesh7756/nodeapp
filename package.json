@@ -1,0 +1,21 @@
+{
+  "name": "nodejsappsimple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "querystring": "^0.2.0",
+    "request": "^2.69.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}

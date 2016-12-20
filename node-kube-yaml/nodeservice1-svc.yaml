@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    app: nodeservice-fe
+  name: nodeservice-fe
+  namespace: app-dev
+spec:
+  type: NodePort
+  ports:
+  - port: 3232
+    nodePort: 30300
+    targetPort: 3232
+  selector:
+    app: node-app1

@@ -1,0 +1,20 @@
+var http=require('http');
+var express=require('express');
+var app=express();
+
+var objecto={ "emp":[
+                   {"fname":"john","lname":"bright"},
+                   {"fname":"Mary","lname":"kom"}
+                    ]
+};
+
+app.get('/',function(req,res){
+
+//res.json(objecto.emp);
+res.send(objecto.emp[0]);
+});
+
+
+app.listen(3000,function(){
+ console.log("hello from console");
+});

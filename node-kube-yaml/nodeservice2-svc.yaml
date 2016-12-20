@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    app: nodeservice-be
+  name: nodeservice-be
+  namespace: app-dev
+spec:
+  type: NodePort
+  ports:
+  - port: 3000
+    nodePort: 30400
+    targetPort: 3000
+  selector:
+    app: node-app2

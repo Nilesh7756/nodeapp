@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: node1-deployment
+  namespace: app-dev
+  labels:
+    app: node-app1
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: node-app1
+    spec:
+      containers:
+      - name: node-app1
+        image: nilesh7756/node-web-app-kube
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3232
